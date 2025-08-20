@@ -1,0 +1,78 @@
+# rviz/legkilo.rviz  (ROS2 / rviz2)
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Name: Tool Properties
+  - Class: rviz_common/Views
+    Name: Views
+    Expanded: true
+
+Visualization Manager:
+  Class: ""
+  Enabled: true
+  Global Options:
+    Fixed Frame: map
+    Frame Rate: 30
+  Displays:
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+    - Class: rviz_default_plugins/PointCloud
+      Name: Cloud Registered (map)
+      Enabled: true
+      Topic:
+        Value: /cloud_registered
+      Style: Points
+      Size (Pixels): 2
+      Color Transformer: Intensity
+      Queue Size: 5
+      Transformations:
+        Value: XYZ
+    - Class: rviz_default_plugins/PointCloud
+      Name: Cloud Registered (body)
+      Enabled: false         # 필요할 때 켜세요
+      Topic:
+        Value: /cloud_registered_body
+      Style: Points
+      Size (Pixels): 2
+      Color Transformer: Intensity
+      Queue Size: 5
+      Transformations:
+        Value: XYZ
+    - Class: rviz_default_plugins/Path
+      Name: Path
+      Enabled: true
+      Topic:
+        Value: /path
+      Line Style: Billboards
+      Line Width: 0.05
+      Color: 25; 255; 25
+      Queue Size: 10
+    - Class: rviz_default_plugins/Odometry
+      Name: Odom
+      Enabled: true
+      Topic:
+        Value: /Odomtry            # 주의: 대소문자 포함 원 주제명
+      Shape: Arrow
+      Color: 25; 25; 255
+      Axes Length: 0.4
+      Axes Radius: 0.03
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/Measure
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Distance: 20
+      Pitch: 0.4
+      Yaw: 0.5
+

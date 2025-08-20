@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>legkilo</name>
+  <version>0.1.0</version>
+
+  <description>
+    Modified and optimized implementation of:
+    "Leg-KILO: Robust Kinematic-Inertial-Lidar Odometry for Dynamic Legged Robots"
+    https://doi.org/10.1109/LRA.2024.3440730
+  </description>
+
+  <maintainer email="ouguangjun98@gmail.com">Guangjun Ou</maintainer>
+  <license>BSD</license>
+
+  <!-- Build tool -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Core ROS 2 deps -->
+  <depend>rclcpp</depend>
+  <depend>tf2_ros</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>pcl_conversions</depend>
+
+  <!-- Unitree messages (ROS2로 변환해 빌드 완료한 패키지) -->
+  <depend>unitree_legged_msgs</depend>   <!-- ✅ 주석 해제/추가 -->
+
+  <!-- System libraries -->
+  <exec_depend>libpcl-dev</exec_depend>
+  <exec_depend>libyaml-cpp-dev</exec_depend>
+  <exec_depend>libgoogle-glog-dev</exec_depend>
+  <!-- <exec_depend>libtbb-dev</exec_depend> -->
+
+  <export/>
+</package>
+

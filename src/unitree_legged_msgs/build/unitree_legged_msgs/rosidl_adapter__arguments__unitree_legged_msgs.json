@@ -1,0 +1,16 @@
+{
+  "package_name": "unitree_legged_msgs",
+  "non_idl_tuples": [
+    "/home/juhyung/ros2_ws/src/unitree_legged_msgs:msg/MotorCmd.msg",
+    "/home/juhyung/ros2_ws/src/unitree_legged_msgs:msg/MotorState.msg",
+    "/home/juhyung/ros2_ws/src/unitree_legged_msgs:msg/BmsCmd.msg",
+    "/home/juhyung/ros2_ws/src/unitree_legged_msgs:msg/BmsState.msg",
+    "/home/juhyung/ros2_ws/src/unitree_legged_msgs:msg/Cartesian.msg",
+    "/home/juhyung/ros2_ws/src/unitree_legged_msgs:msg/IMU.msg",
+    "/home/juhyung/ros2_ws/src/unitree_legged_msgs:msg/LED.msg",
+    "/home/juhyung/ros2_ws/src/unitree_legged_msgs:msg/LowCmd.msg",
+    "/home/juhyung/ros2_ws/src/unitree_legged_msgs:msg/LowState.msg",
+    "/home/juhyung/ros2_ws/src/unitree_legged_msgs:msg/HighCmd.msg",
+    "/home/juhyung/ros2_ws/src/unitree_legged_msgs:msg/HighState.msg"
+  ]
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>unitree_legged_msgs</name>
+  <version>0.1.0</version>
+  <description>ROS2 interfaces for Unitree legged robots (ported from ROS1 msgs).</description>
+
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>BSD-3-Clause</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+
+  <!-- 메시지에서 참조하는 표준 인터페이스 -->
+  <depend>builtin_interfaces</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+

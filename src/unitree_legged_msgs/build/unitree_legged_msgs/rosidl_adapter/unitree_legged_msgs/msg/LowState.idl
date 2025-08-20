@@ -1,0 +1,72 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from unitree_legged_msgs/msg/LowState.msg
+// generated code does not contain a copyright notice
+
+#include "unitree_legged_msgs/msg/BmsState.idl"
+#include "unitree_legged_msgs/msg/Cartesian.idl"
+#include "unitree_legged_msgs/msg/IMU.idl"
+#include "unitree_legged_msgs/msg/MotorState.idl"
+
+module unitree_legged_msgs {
+  module msg {
+    typedef uint8 uint8__2[2];
+    typedef uint32 uint32__2[2];
+    typedef unitree_legged_msgs::msg::MotorState unitree_legged_msgs__msg__MotorState;
+    typedef unitree_legged_msgs__msg__MotorState unitree_legged_msgs__msg__MotorState__20[20];
+    typedef int16 int16__4[4];
+    typedef uint8 uint8__40[40];
+    typedef unitree_legged_msgs::msg::Cartesian unitree_legged_msgs__msg__Cartesian;
+    typedef unitree_legged_msgs__msg__Cartesian unitree_legged_msgs__msg__Cartesian__4[4];
+    struct LowState {
+      uint8__2 head;
+
+      uint8 levelflag;
+
+      uint8 framereserve;
+
+      uint32__2 sn;
+
+      uint32__2 version;
+
+      uint16 bandwidth;
+
+      unitree_legged_msgs::msg::IMU imu;
+
+      unitree_legged_msgs__msg__MotorState__20 motor_state;
+
+      unitree_legged_msgs::msg::BmsState bms;
+
+      int16__4 foot_force;
+
+      int16__4 foot_force_est;
+
+      uint32 tick;
+
+      uint8__40 wireless_remote;
+
+      uint32 reserve;
+
+      uint32 crc;
+
+      @verbatim (language="comment", text=
+        "Old version Aliengo does not have:")
+      unitree_legged_msgs__msg__Cartesian__4 ee_force_raw;
+
+      @verbatim (language="comment", text=
+        "it's a 1-DOF force infact, but we use 3-DOF here just for visualization")
+      unitree_legged_msgs__msg__Cartesian__4 ee_force;
+
+      @verbatim (language="comment", text=
+        "will delete")
+      unitree_legged_msgs::msg::Cartesian position;
+
+      @verbatim (language="comment", text=
+        "will delete")
+      unitree_legged_msgs::msg::Cartesian velocity;
+
+      @verbatim (language="comment", text=
+        "will delete")
+      unitree_legged_msgs::msg::Cartesian velocity_w;
+    };
+  };
+};

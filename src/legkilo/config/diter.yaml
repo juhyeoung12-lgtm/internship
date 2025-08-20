@@ -1,0 +1,24 @@
+# config/legkilo_params.yaml  (ROS2)
+legkilo:
+  ros__parameters:
+    # Frames
+    frame_map: map
+    frame_base: base_link
+
+    # Topics (from diter.yaml)
+    topic_points: /agent1/ouster/points
+    topic_high_state: /agent1/high_state
+
+    # Output topics (node publishes)
+    topic_cloud_registered: /cloud_registered
+    topic_cloud_registered_body: /cloud_registered_body
+    topic_path: /path
+    topic_odom: /Odomtry   # 원 코드 철자 유지
+
+    # LiDAR processing (from diter.yaml)
+    lidar.filter_num: 3
+    lidar.time_scale: 1.0e-9        # ns -> s
+    lidar.voxel_leaf_size: 0.5
+    lidar.min_range: 0.0
+    lidar.max_range: 0.0
+
